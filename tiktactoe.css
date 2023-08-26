@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(212, 196, 176);
+}
+nav{
+    background: linear-gradient(to right,red,blue,green,yellow);
+    padding: 1%;
+    color: rgb(165, 156, 156);
+    font-size: x-large;
+}
+nav h1{
+    position:relative;
+    left: 5%;
+}
+.bigcon{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.contaner{
+    display: flex;
+    max-width: 900px;
+    width: 45%;
+    margin: 2% auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+}
+.con{
+    text-align: center;
+    width: 33.333%;
+    padding: 2%;
+    background-color: rgba(161, 153, 153, 0.356);
+}
+.con:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px 40px rgb(17, 17, 17);
+    background-color:rgba(161, 153, 153, 0.555) ;
+}
+.con h1{
+    padding: 20px; 
+}
+.box1{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.box2{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.box3{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.box4{
+    border: 2px solid black;
+    border-left:none ;
+}
+.box5{
+    border: 2px solid black;
+}
+.box6{
+    border: 2px solid black;
+    border-right:none ;
+}
+.box7{
+    border: 2px solid black;
+    border-left:none ;
+    border-bottom: none ;
+}
+.box8{
+    border: 2px solid black;
+    border-bottom:none ;
+}
+.box9{
+    border: 2px solid black;
+    border-right: none;
+    border-bottom:none ;
+}
+.but{
+    float: left;
+    width: 30%;
+    margin: 0 auto;
+}
+.but input{
+    padding: 10px;
+    margin: 2%;
+    font-size: larger;
+    border: none;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+#player{
+    color: red;
+}
+#startbut{
+    background-color: green;
+    color: white;
+}
+#restart{
+    background-color: rgb(55, 108, 129);
+    color: white;
+}
+@media all and (max-width:700px){
+    nav h1{
+        text-align: center;
+        left: 1%;
+    }
+    .bigcon{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contaner{
+        width: 100%;
+        margin-left: 20%;
+        align-self: center;
+    }
+    .but{
+        float: none;
+        margin-left: 20%;
+        align-self: center;
+        width: 100%;
+    }
+    .but input{
+        margin-left: 10%;
+        width: 80%;
+
+    }
+}
